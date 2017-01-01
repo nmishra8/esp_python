@@ -1,0 +1,194 @@
+
+ Intel(r) Performance Counter Monitor V2.6 (2013-11-04 13:43:31 +0100 ID=db05e43)
+
+ Copyright (c) 2009-2013 Intel Corporation
+
+Number of physical cores: 16
+Number of logical cores: 32
+Threads (logical cores) per physical core: 2
+Num sockets: 2
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 2900000000 Hz
+Package thermal spec power: 135 Watt; Package minimum power: 51 Watt; Package maximum power: 215 Watt; 
+Socket 0: 1 memory controllers detected with total number of 4 channels. 2 QPI ports detected.
+Socket 1: 1 memory controllers detected with total number of 4 channels. 2 QPI ports detected.
+Using PCM on your system might have a performance impact as per http://software.intel.com/en-us/articles/performance-impact-when-sampling-certain-llc-events-on-snb-ep-with-vtune
+You can avoid the performance impact by using the option --noJKTWA, however the cache metrics might be wrong then.
+ERROR: QPI LL counter programming seems not to work. Q_P0_PCI_PMON_BOX_CTL=0xffffffff
+       Please see BIOS options to enable the export of performance monitoring devices (devices 8 and 9: function 2).
+ERROR: QPI LL counter programming seems not to work. Q_P1_PCI_PMON_BOX_CTL=0xffffffff
+       Please see BIOS options to enable the export of performance monitoring devices (devices 8 and 9: function 2).
+ERROR: QPI LL counter programming seems not to work. Q_P0_PCI_PMON_BOX_CTL=0xffffffff
+       Please see BIOS options to enable the export of performance monitoring devices (devices 8 and 9: function 2).
+ERROR: QPI LL counter programming seems not to work. Q_P1_PCI_PMON_BOX_CTL=0xffffffff
+       Please see BIOS options to enable the export of performance monitoring devices (devices 8 and 9: function 2).
+Max QPI link speed: 16.0 GBytes/second (8.0 GT/second)
+
+Detected Intel(R) Xeon(R) CPU E5-2690 0 @ 2.90GHz "Intel(r) microarchitecture codename Sandy Bridge-EP/Jaketown"
+
+ Executing " /local/huazhe/NU-MineBench-3.0/src/APR/no_output_apriori -i /local/huazhe/NU-MineBench-3.0/datasets/APR/data.ntrans_10000.tlen_20.nitems_1.npats_2000.patlen_6 -f /local/huazhe/NU-MineBench-3.0/datasets/APR/offset_file_10000_P32.txt -s 0.075 -n 32  &  sleep 40" command:
+
+heartenabled//27868
+Allocating log for 27868, 55736
+heartenabled//27868
+fd = 48
+this is iteration 0!!!!!!!!
+ more = 1
+Exit code: 0
+
+
+ EXEC  : instructions per nominal CPU cycle
+ IPC   : instructions per CPU cycle
+ FREQ  : relation to nominal CPU frequency='unhalted clock ticks'/'invariant timer ticks' (includes Intel Turbo Boost)
+ AFREQ : relation to nominal CPU frequency while in active state (not in power-saving C state)='unhalted clock ticks'/'invariant timer ticks while in C0-state'  (includes Intel Turbo Boost)
+ L3MISS: L3 cache misses 
+ L2MISS: L2 cache misses (including other core's L2 cache *hits*) 
+ L3HIT : L3 cache hit ratio (0.00-1.00)
+ L2HIT : L2 cache hit ratio (0.00-1.00)
+ L3CLK : ratio of CPU cycles lost due to L3 cache misses (0.00-1.00), in some cases could be >1.0 due to a higher memory latency
+ L2CLK : ratio of CPU cycles lost due to missing L2 cache but still hitting L3 cache (0.00-1.00)
+ READ  : bytes read from memory controller (in GBytes)
+ WRITE : bytes written to memory controller (in GBytes)
+ TEMP  : Temperature reading in 1 degree Celsius relative to the TjMax temperature (thermal headroom): 0 corresponds to the max temperature
+
+
+ Core (SKT) | EXEC | IPC  | FREQ  | AFREQ | L3MISS | L2MISS | L3HIT | L2HIT | L3CLK | L2CLK  | READ  | WRITE | TEMP
+
+   0    0     0.44   0.41   1.08    1.14     127 M    594 M    0.79    0.22    0.18    0.13     N/A     N/A     31
+   1    0     0.43   0.40   1.07    1.14     126 M    576 M    0.78    0.23    0.18    0.13     N/A     N/A     32
+   2    0     0.44   0.41   1.07    1.14     119 M    542 M    0.78    0.23    0.17    0.12     N/A     N/A     33
+   3    0     0.43   0.40   1.06    1.14     131 M    542 M    0.76    0.24    0.19    0.12     N/A     N/A     32
+   4    0     0.43   0.40   1.07    1.14     121 M    500 M    0.76    0.23    0.18    0.11     N/A     N/A     34
+   5    0     0.43   0.40   1.07    1.14     128 M    546 M    0.76    0.22    0.19    0.12     N/A     N/A     35
+   6    0     0.43   0.40   1.06    1.14     127 M    543 M    0.77    0.23    0.19    0.12     N/A     N/A     34
+   7    0     0.42   0.40   1.06    1.14     127 M    539 M    0.76    0.23    0.19    0.12     N/A     N/A     37
+   8    1     0.42   0.40   1.07    1.14     138 M    655 M    0.79    0.22    0.20    0.15     N/A     N/A     28
+   9    1     0.42   0.39   1.07    1.14     124 M    534 M    0.77    0.22    0.18    0.12     N/A     N/A     28
+   a    1     0.42   0.39   1.07    1.14     134 M    634 M    0.79    0.22    0.20    0.14     N/A     N/A     24
+   b    1     0.41   0.39   1.07    1.14     123 M    541 M    0.77    0.23    0.18    0.12     N/A     N/A     26
+   c    1     0.43   0.40   1.07    1.14     133 M    631 M    0.79    0.22    0.19    0.14     N/A     N/A     25
+   d    1     0.42   0.39   1.07    1.14     130 M    566 M    0.77    0.22    0.19    0.12     N/A     N/A     27
+   e    1     0.42   0.39   1.07    1.14     129 M    603 M    0.79    0.22    0.19    0.13     N/A     N/A     25
+   f    1     0.42   0.39   1.07    1.14     129 M    564 M    0.77    0.23    0.19    0.12     N/A     N/A     26
+  10    0     0.44   0.41   1.07    1.14     127 M    735 M    0.83    0.23    0.19    0.17     N/A     N/A     31
+  11    0     0.44   0.41   1.07    1.14     116 M    627 M    0.81    0.23    0.17    0.15     N/A     N/A     32
+  12    0     0.44   0.41   1.07    1.14     114 M    585 M    0.81    0.23    0.17    0.13     N/A     N/A     33
+  13    0     0.43   0.41   1.06    1.14     128 M    569 M    0.78    0.24    0.19    0.13     N/A     N/A     33
+  14    0     0.43   0.41   1.06    1.14     118 M    586 M    0.80    0.24    0.17    0.13     N/A     N/A     34
+  15    0     0.44   0.41   1.07    1.14     122 M    647 M    0.81    0.23    0.18    0.15     N/A     N/A     36
+  16    0     0.43   0.41   1.06    1.14     123 M    596 M    0.79    0.23    0.18    0.14     N/A     N/A     34
+  17    0     0.43   0.40   1.06    1.14     130 M    622 M    0.79    0.23    0.19    0.14     N/A     N/A     37
+  18    1     0.44   0.41   1.07    1.14     139 M    745 M    0.81    0.23    0.20    0.17     N/A     N/A     28
+  19    1     0.43   0.40   1.07    1.14     128 M    698 M    0.82    0.23    0.19    0.16     N/A     N/A     28
+  1a    1     0.42   0.39   1.07    1.14     125 M    659 M    0.81    0.22    0.18    0.15     N/A     N/A     24
+  1b    1     0.41   0.39   1.07    1.14     121 M    531 M    0.77    0.23    0.18    0.12     N/A     N/A     26
+  1c    1     0.43   0.40   1.07    1.14     124 M    638 M    0.81    0.23    0.18    0.15     N/A     N/A     25
+  1d    1     0.43   0.40   1.07    1.14     128 M    662 M    0.81    0.23    0.19    0.15     N/A     N/A     27
+  1e    1     0.44   0.41   1.07    1.14     128 M    712 M    0.82    0.23    0.19    0.17     N/A     N/A     24
+  1f    1     0.42   0.40   1.07    1.14     120 M    588 M    0.80    0.23    0.17    0.13     N/A     N/A     26
+-------------------------------------------------------------------------------------------------------------------
+ SKT    0     0.43   0.41   1.07    1.14    1990 M   9356 M    0.79    0.23    0.18    0.13    222.75    172.82     30
+ SKT    1     0.42   0.40   1.07    1.14    2059 M   9970 M    0.79    0.23    0.19    0.14    120.01    85.84     23
+-------------------------------------------------------------------------------------------------------------------
+ TOTAL  *     0.43   0.40   1.07    1.14    4049 M     19 G    0.79    0.23    0.18    0.14    342.76    258.65     N/A
+
+ Instructions retired: 1589 G ; Active cycles: 3966 G ; Time (TSC):  116 Gticks ; C0 (active,non-halted) core residency: 93.85 %
+
+ C1 core residency: 4.94 %; C3 core residency: 0.09 %; C6 core residency: 0.00 %; C7 core residency: 1.12 %;
+ C2 package residency: 0.00 %; C3 package residency: 0.00 %; C6 package residency: 0.00 %; C7 package residency: 0.00 %;
+
+ PHYSICAL CORE IPC                 : 0.80 => corresponds to 20.04 % utilization for cores in active state
+ Instructions per nominal CPU cycle: 0.86 => corresponds to 21.40 % core utilization over time interval
+
+Intel(r) QPI data traffic estimation in bytes (data traffic coming to CPU/socket through QPI links):
+
+               QPI0     QPI1    |  QPI0   QPI1  
+----------------------------------------------------------------------------------------------
+ SKT    0        0        0     |    0%     0%   
+ SKT    1        0        0     |    0%     0%   
+----------------------------------------------------------------------------------------------
+Total QPI incoming data traffic:    0       QPI data traffic/Memory controller traffic: 0.00
+
+Intel(r) QPI traffic estimation in bytes (data and non-data traffic outgoing from CPU/socket through QPI links):
+
+               QPI0     QPI1    |  QPI0   QPI1  
+----------------------------------------------------------------------------------------------
+ SKT    0        0        0     |    0%     0%   
+ SKT    1        0        0     |    0%     0%   
+----------------------------------------------------------------------------------------------
+Total QPI outgoing data and non-data traffic:    0  
+
+----------------------------------------------------------------------------------------------
+ SKT    0 package consumed 4295.16 Joules
+ SKT    1 package consumed 4373.61 Joules
+----------------------------------------------------------------------------------------------
+ TOTAL:                    8668.77 Joules
+
+----------------------------------------------------------------------------------------------
+ SKT    0 DIMMs consumed 784.91 Joules
+ SKT    1 DIMMs consumed 366.27 Joules
+----------------------------------------------------------------------------------------------
+ TOTAL:                  1151.18 Joules
+Cleaning up
+Using PCM on your system might have a performance impact as per http://software.intel.com/en-us/articles/performance-impact-when-sampling-certain-llc-events-on-snb-ep-with-vtune
+You can avoid the performance impact by using the option --noJKTWA, however the cache metrics might be wrong then.
+this is iteration 1!!!!!!!!
+ more = 1
+this is iteration 2!!!!!!!!
+ more = 1
+this is iteration 3!!!!!!!!
+ more = 1
+this is iteration 4!!!!!!!!
+ more = 1
+this is iteration 5!!!!!!!!
+ more = 1
+this is iteration 6!!!!!!!!
+ more = 1
+this is iteration 7!!!!!!!!
+ more = 1
+this is iteration 8!!!!!!!!
+ more = 1
+this is iteration 9!!!!!!!!
+ more = 1
+this is iteration 10!!!!!!!!
+ more = 1
+this is iteration 11!!!!!!!!
+ more = 1
+this is iteration 12!!!!!!!!
+ more = 1
+this is iteration 13!!!!!!!!
+ more = 1
+this is iteration 14!!!!!!!!
+ more = 1
+this is iteration 15!!!!!!!!
+ more = 1
+this is iteration 16!!!!!!!!
+ more = 1
+this is iteration 17!!!!!!!!
+ more = 1
+this is iteration 18!!!!!!!!
+ more = 1
+this is iteration 19!!!!!!!!
+ more = 1
+this is iteration 20!!!!!!!!
+ more = 1
+this is iteration 21!!!!!!!!
+ more = 1
+this is iteration 22!!!!!!!!
+ more = 1
+this is iteration 23!!!!!!!!
+ more = 1
+this is iteration 24!!!!!!!!
+ more = 1
+this is iteration 25!!!!!!!!
+ more = 1
+this is iteration 26!!!!!!!!
+ more = 1
+this is iteration 27!!!!!!!!
+ more = 1
+this is iteration 28!!!!!!!!
+ more = 1
